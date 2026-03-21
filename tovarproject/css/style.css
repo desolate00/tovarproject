@@ -193,7 +193,7 @@
 }
 .price-new {
       color: #e53935;
-      font-weight: bold;
+      font-weight: bold;   
 }
 .discount {
       background-color: #e53935;
@@ -202,4 +202,4 @@
       border-radius: 4px;
       font-weight: bold;
       font-size: 0.9em;
-} ...
+}    
