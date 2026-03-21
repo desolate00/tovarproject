@@ -1,0 +1,205 @@
+.pol {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #34495e; 
+  padding: 0 30px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  
+}
+
+.logo {
+  width: 18%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo img {
+  height: 45px; 
+}
+
+.menu {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #ecf0f1; 
+  font-size: 1.1em;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.reg {
+  width: 15%;
+  height: 50px;
+  background-color: #e67e22; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.reg:hover {
+  background-color: #d35400;
+}
+
+.main-info {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.main-info h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.main-info p {
+  font-size: 1.2em;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #34495e;
+}
+
+.advantages {
+  padding: 40px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.adv-item {
+  display: inline-block;
+  width: 33%;
+  margin: 5px 1.5%;
+  vertical-align: top;
+  background-color: #ecf0f1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.adv-item h3 {
+  margin-bottom: 15px;
+  color: #2980b9;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background-color: #2980b9;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #3498db;
+}
+
+
+.inf {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+.inf h1 {
+  font-size: 4.5 em;
+  margin-bottom: 20px;
+  color: #242424;
+}
+
+.inf p {
+  font-size: 1.2em;
+  max-width: 1500px;
+  margin: 0 auto;
+  color: #242424;
+}
+
+
+.company-info {
+  padding: 20px; 
+  max-width: 550px; 
+  margin: 20px auto; 
+  font-family: Arial, sans-serif; 
+  font-size: 14px;
+  color: #f3f3f3; 
+  line-height: 1.5;
+}
+
+.photo-section {
+    text-align: center;
+    margin: 50px 0;
+    font-family: Arial, sans-serif;
+}
+
+.photo-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.photo-area {
+    border: 4px solid #ccc; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.photo-area img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.price-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 8px;
+      font-size: 1.1em;
+}
+.price-old {
+      text-decoration: line-through;
+      color: gray;
+      font-size: 0.9em;
+}
+.price-new {
+      color: #e53935;
+      font-weight: bold;
+}
+.discount {
+      background-color: #e53935;
+      color: #fff;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: bold;
+      font-size: 0.9em;
+} ...
