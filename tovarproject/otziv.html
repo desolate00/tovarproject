@@ -4,12 +4,12 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" href="css/otziv.css" />
-<title>Мой сайт</title>
+<title>Отзывы</title>
 </head>
 <body>
     <div class="pol">
         <div class="logo">
-            <img src="img/opt-logo.png" alt="" />
+            <img src="img/opt-logo.png" alt="Логотип" />
         </div>
         <div class="menu">
             <a href="file:///C:/tovarproject/index.html">Главная</a>
@@ -24,7 +24,35 @@
         </div>
     </div>
 
-    
+    <!-- Основной блок отзывов -->
+    <section class="reviews-section">
+        <h2>Отзывы наших клиентов</h2>
+        <div class="reviews-container" id="reviews-container">
+            <!-- Отзывы добавляйте сюда вручную -->
+            <div class="review">
+                <p><strong>Юлия:</strong> Очень довольна качеством мебели! Быстрая доставка и аккуратная сборка.</p>
+            </div>
+            <div class="review">
+                <p><strong>Мария:</strong> Отличный сервис и приятный персонал. Рекомендую всем!</p>
+            </div>
+            <div class="review">
+                <p><strong>Алексей:</strong> Заказ пришёл вовремя, всё отлично сделано. Спасибо!</p>
+            </div>
+            <div class="review">
+                <p><strong>Ольга:</strong> Очень понравилась мебель, буду заказывать ещё!</p>
+            </div>
+        </div>
 
+        <!-- Форма для добавления нового отзыва -->
+        <div class="add-review-form">
+            <h3>Оставьте свой отзыв</h3>
+            <form id="reviewForm">
+                <input type="text" id="name" placeholder="Ваше имя" required />
+                <textarea id="message" rows="4" placeholder="Ваш отзыв" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
 </body>
 </html>
