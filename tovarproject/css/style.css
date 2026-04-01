@@ -186,15 +186,18 @@
       margin-top: 8px;
       font-size: 1.1em;
 }
+
 .price-old {
       text-decoration: line-through;
       color: gray;
       font-size: 0.9em;
 }
+
 .price-new {
       color: #e53935;
       font-weight: bold;   
 }
+
 .discount {
       background-color: #e53935;
       color: #fff;
