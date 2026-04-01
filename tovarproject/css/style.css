@@ -1,6 +1,11 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
 .pol {
   width: 100%;
-  height: 80px;
+  height: 90px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -9,7 +14,6 @@
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   box-sizing: border-box;
   font-family: 'Arial', sans-serif;
-  
 }
 
 .logo {
@@ -56,47 +60,6 @@
   background-color: #d35400;
 }
 
-.main-info {
-  padding: 40px 20px;
-  text-align: center;
-  background-color: #f4f4f4;
-}
-
-.main-info h1 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-  color: #2c3e50;
-}
-
-.main-info p {
-  font-size: 1.2em;
-  max-width: 800px;
-  margin: 0 auto;
-  color: #34495e;
-}
-
-.advantages {
-  padding: 40px 20px;
-  background-color: #ffffff;
-  text-align: center;
-}
-
-.adv-item {
-  display: inline-block;
-  width: 33%;
-  margin: 5px 1.5%;
-  vertical-align: top;
-  background-color: #ecf0f1;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.adv-item h3 {
-  margin-bottom: 15px;
-  color: #2980b9;
-}
-
 .btn {
   display: inline-block;
   margin-top: 20px;
@@ -112,7 +75,6 @@
 .btn:hover {
   background-color: #3498db;
 }
-
 
 .inf {
   padding: 40px 20px;
@@ -179,6 +141,10 @@
     border-radius: 8px;
 }
 
+.photo-caption {
+  padding: 15px;
+}
+
 .price-info {
       display: flex;
       align-items: center;
@@ -198,11 +164,71 @@
       font-weight: bold;   
 }
 
-.discount {
-      background-color: #e53935;
-      color: #fff;
-      padding: 2px 6px;
-      border-radius: 4px;
-      font-weight: bold;
-      font-size: 0.9em;
-}    
+.about-us {
+  padding: 40px;
+  background-color: #f9f9f9;
+  margin-top: 30px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-us h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-us h3 {
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.about-us p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.about-us ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+
+.banner-slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  display: none;
+  position: relative;
+}
+
+.slide.active {
+  display: block;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
