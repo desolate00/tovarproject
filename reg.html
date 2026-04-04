@@ -3,30 +3,51 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Регистрация и вход</title>
 <link rel="stylesheet" href="css/reg.css" />
-<title>Регистрация и Вход</title>
 </head>
 <body>
 
-<div class="pol">
-    <div class="logo">
-        <img src="img/opt-logo.png" alt="Логотип компании" />
-    </div>
-    <div class="menu">
-        <a href="index.html">Главная</a>
-        <a href="tovar.html">Товары</a>
-        <a href="onac.html">О нас</a>
-        <a href="otziv.html">Отзывы</a>
-        <a href="uslug.html">Услуги</a>
-        <a href="contact.html">Контакты</a>
-        <a href="reg.html"></a>
-    </div>
-    <div class="reg">
-        Регистрация | Вход
+<div class="container">
+  <div class="form-wrapper">
+    <form id="registerForm" class="form active" novalidate>
+      <h2>Регистрация</h2>
+      <label>Имя</label>
+      <input type="text" id="regName" placeholder="Ваше имя" />
 
-    </div>
+      <label>Телефон</label>
+      <input type="text" id="regPhone" placeholder="Телефон" />
+
+      <label>Пароль</label>
+      <input type="password" id="regPass" placeholder="Пароль" />
+
+      <label>Подтвердите пароль</label>
+      <input type="password" id="regConf" placeholder="Подтвердите пароль" />
+
+      <div id="regErrors"></div>
+      <button type="submit">Зарегистрироваться</button>
+      <p class="toggle-link">Уже есть аккаунт? <a href="#" id="toLogin">Войти</a></p>
+    </form>
+
+    <form id="loginForm" class="form" novalidate>
+      <h2>Вход</h2>
+      <label>Имя</label>
+      <input type="text" id="loginName" placeholder="Ваше имя" />
+
+      <label>Телефон</label>
+      <input type="text" id="regPhone" placeholder="Телефон" />
+
+      <label>Пароль</label>
+      <input type="password" id="loginPass" placeholder="Пароль" />
+
+      <div id="loginErrors"></div>
+      <button type="submit">Войти</button>
+      <p class="toggle-link">Нет аккаунта? <a href="#" id="toRegister">Зарегистрироваться</a></p>
+    </form>
+  </div>
 </div>
 
+<script src="js/reg.js"></script>
 
 </body>
 </html>
