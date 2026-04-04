@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" href="css/style.css" />
-<title>Мой сайт</title>
+<link rel="stylesheet" href="css/tovar.css" />
+<title>Товары(Мебель)</title>
 </head>
 <body>
     <div class="pol">
@@ -12,17 +12,88 @@
             <img src="img/opt-logo.png" alt="" />
         </div>
         <div class="menu">
-            <a href="file:///C:/tovarproject/index.html">Главная</a>
-            <a href="file:///C:/tovarproject/tovar.html">Товары</a>
-            <a href="file:///C:/tovarproject/onac.html">О нас</a>
-            <a href="file:///C:/tovarproject/otziv.html">Отзывы</a>
-            <a href="file:///C:/tovarproject/uslug.html">Услуги</a>
-            <a href="file:///C:/tovarproject/contact.html">Контакты</a>
+            <a href="index.html">Главная</a>
+            <a href="tovar.html">Товары</a>
+            <a href="onac.html">О нас</a>
+            <a href="otziv.html">Отзывы</a>
+            <a href="contact.html">Контакты</a>
         </div>
         <div class="reg">
-            Регистрация | Вход
+           <a href="reg.html">Регистрация | Вход</a>
         </div>
     </div>
 
+    <section class="catalog">
+
+        <div class="category-buttons">
+            <button class="category-button" data-category="sofas">Диваны</button>
+            <button class="category-button" data-category="tables">Столы</button>
+            <button class="category-button" data-category="wardrobes">Шкафы</button>
+        </div>
+
+        <div class="cards-container sofas">
+            <div class="card">
+                <img src="img/sofa1.jpg" alt="Диван 1" />
+                <h3>Угловой диван</h3>
+                <p>Комфортный угловой диван для гостиной.</p>
+                <div class="info">
+                    <span class="price">Цена: 25000 ₽</span>
+                    <span class="stock">В наличии: 4 шт</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/sofa2.jpg" alt="Диван 2" />
+                <h3>Диван-кровать</h3>
+                <p>Практичный диван с функцией кровати.</p>
+                <div class="info">
+                    <span class="price">Цена: 22000 ₽</span>
+                    <span class="stock">В наличии: 2 шт</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="cards-container tables">
+            <div class="card">
+                <img src="img/table1.jpg" alt="Стол 1" />
+                <h3>Обеденный стол</h3>
+                <p>Большой деревянный стол для всей семьи.</p>
+                <div class="info">
+                    <span class="price">Цена: 18000 ₽</span>
+                    <span class="stock">В наличии: 3 шт</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/table2.jpg" alt="Стол 2" />
+                <h3>Рабочий стол</h3>
+                <p>Удобный стол для работы и учебы.</p>
+                <div class="info">
+                    <span class="price">Цена: 15000 ₽</span>
+                    <span class="stock">В наличии: 5 шт</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="cards-container wardrobes">
+            <div class="card">
+                <img src="img/wardrobe1.jpg" alt="Шкаф 1" />
+                <h3>Шкаф-купе</h3>
+                <p>Стильный шкаф с раздвижными дверями.</p>
+                <div class="info">
+                    <span class="price">Цена: 25000 ₽</span>
+                    <span class="stock">В наличии: 2 шт</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/wardrobe2.jpg" alt="Шкаф 2" />
+                <h3>Настенный шкаф</h3>
+                <p>Компактный шкаф для хранения книг и мелочей.</p>
+                <div class="info">
+                    <span class="price">Цена: 8000 ₽</span>
+                    <span class="stock">В наличии: 4 шт</span>
+                </div>
+            </div>
+        </div>
+    </section>
+<script src="js/tovar.js"></script>
 </body>
 </html>
