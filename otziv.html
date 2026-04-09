@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/otziv.css" />
+<title>Отзывы</title>
+</head>
+<body>
+    <div class="pol">
+        <div class="logo">
+            <span>МногоМебели</span>
+        </div>
+        <div class="menu">
+            <a href="index.html">Главная</a>
+            <a href="tovar.html">Товары</a>
+            <a href="onac.html">О нас</a>
+            <a href="otziv.html">Отзывы</a>
+            <a href="contact.html">Контакты</a>
+        </div>
+        <div class="reg">
+           <a href="reg.html">Регистрация | Вход</a>
+        </div>
+    </div>
+
+    <section class="reviews-section">
+        <h2>Отзывы наших клиентов</h2>
+
+        <div class="reviews-container" id="reviews-container">
+            <div class="review">
+                <div class="review-header">
+                    <div class="review-avatar">Ю</div>
+                    <div class="review-info">
+                        <span class="review-name">Юлия</span>
+                        <span class="review-date">12 марта 2025</span>
+                    </div>
+                    <div class="review-rating">★★★★★</div>
+                </div>
+                <p class="review-text">Очень довольна качеством мебели! Быстрая доставка и аккуратная сборка.</p>
+            </div>
+
+            <div class="review">
+                <div class="review-header">
+                    <div class="review-avatar">М</div>
+                    <div class="review-info">
+                        <span class="review-name">Мария</span>
+                        <span class="review-date">28 февраля 2025</span>
+                    </div>
+                    <div class="review-rating">★★★★★</div>
+                </div>
+                <p class="review-text">Отличный сервис и приятный персонал. Рекомендую всем!</p>
+            </div>
+
+            <div class="review">
+                <div class="review-header">
+                    <div class="review-avatar">А</div>
+                    <div class="review-info">
+                        <span class="review-name">Алексей</span>
+                        <span class="review-date">15 января 2025</span>
+                    </div>
+                    <div class="review-rating">★★★★☆</div>
+                </div>
+                <p class="review-text">Заказ пришёл вовремя, всё отлично сделано. Спасибо!</p>
+            </div>
+
+            <div class="review">
+                <div class="review-header">
+                    <div class="review-avatar">О</div>
+                    <div class="review-info">
+                        <span class="review-name">Ольга</span>
+                        <span class="review-date">3 декабря 2024</span>
+                    </div>
+                    <div class="review-rating">★★★★★</div>
+                </div>
+                <p class="review-text">Очень понравилась мебель, буду заказывать ещё!</p>
+            </div>
+        </div>
+
+        <div class="add-review-form">
+            <h3>Оставьте свой отзыв</h3>
+            <form id="reviewForm">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Ваше имя" required />
+                </div>
+                <div class="form-group">
+                    <div class="rating-select" id="ratingSelect">
+                        <span class="star" data-rating="1">★</span>
+                        <span class="star" data-rating="2">★</span>
+                        <span class="star" data-rating="3">★</span>
+                        <span class="star" data-rating="4">★</span>
+                        <span class="star" data-rating="5">★</span>
+                    </div>
+                    <input type="hidden" id="rating" value="5" />
+                </div>
+                <div class="form-group">
+                    <textarea id="message" rows="4" placeholder="Ваш отзыв" required></textarea>
+                </div>
+                <button type="submit">Отправить отзыв</button>
+            </form>
+        </div>
+    </section>
+    <script src="js/otziv.js"></script>
+</body>
+</html>
